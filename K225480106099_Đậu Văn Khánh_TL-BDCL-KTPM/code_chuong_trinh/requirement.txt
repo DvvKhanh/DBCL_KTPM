@@ -1,0 +1,15 @@
+Hệ thống đăng nhập gồm các quy tắc:
+
+1. Email không được để trống.
+2. Password không được để trống.
+3. Email phải đúng định dạng.
+4. Email tối đa 100 ký tự.
+5. Đăng nhập thành công khi đúng tài khoản.
+6. Sau 5 lần sai liên tiếp tài khoản bị khóa.
+7. Thời gian khóa là 15 phút.
+8. Trong thời gian khóa không được đăng nhập.
+
+
+
+
+
