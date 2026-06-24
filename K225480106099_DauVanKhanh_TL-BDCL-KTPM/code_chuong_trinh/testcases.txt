@@ -1,0 +1,39 @@
+
+TC001 | Truy cập trang chủ | GET / | HTTP 200
+
+TC002 | Email để trống |
+email='' password='Password123!'
+| HTTP 400
+
+TC003 | Password để trống |
+email='K225480106099@tnut.edu.vn'
+password=''
+| HTTP 400
+
+TC004 | Email sai định dạng |
+abcgmail.com
+| HTTP 400
+
+TC005 | Email vượt quá 100 ký tự |
+101 ký tự
+| HTTP 400
+
+TC006 | Email không tồn tại |
+abc@gmail.com
+| HTTP 401
+
+TC007 | Sai mật khẩu |
+abc123
+| HTTP 401
+
+TC008 | Đăng nhập thành công |
+Email + Password đúng
+| HTTP 200
+
+TC009 | Sai liên tiếp 5 lần |
+Wrong Password
+| HTTP 403
+
+TC010 | Đăng nhập khi tài khoản bị khóa |
+Locked Account
+| HTTP 403
